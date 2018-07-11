@@ -1,0 +1,10 @@
+<h6>Categorias</h6>
+<ul>
+  <li
+    [class.selected]="!categoryService.selected"
+    (click)="onUnselected()">Todos</li>
+  <li
+    *ngFor="let category of categories"
+    [class.selected]="category === categoryService.selected"
+    (click)="onSelected(category)">{{ category.title }}</li>
+</ul>

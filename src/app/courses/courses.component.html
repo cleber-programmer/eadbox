@@ -1,0 +1,6 @@
+<h6>Cursos</h6>
+<ul>
+  <li *ngFor="let course of courses|only:categoryService.selected">
+    <h2>{{ course.title }}</h2>
+  </li>
+</ul>
